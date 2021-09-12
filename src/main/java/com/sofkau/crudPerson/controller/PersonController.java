@@ -33,6 +33,10 @@ public final class PersonController {
     public void deletePerson(@PathVariable int id) {
         servicePerson.delete(id);
     }
+    @PutMapping(value = "/updatePerson")
+    public void UpdatePerson(@RequestBody Person person) {
+        servicePerson.update(person);
+    }
 
 
 }

@@ -42,6 +42,6 @@ public final class PersonService implements PersonServiceInterface{
 
     @Override
     public Person update(Person person) {
-        return null;
+        return data.save(person);
     }
 }
