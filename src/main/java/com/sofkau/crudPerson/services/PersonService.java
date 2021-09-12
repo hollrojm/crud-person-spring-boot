@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 //implemnetacion de interface
 @Service
@@ -25,8 +26,8 @@ public final class PersonService implements PersonServiceInterface{
     }
 
     @Override
-    public Person getId(int id) {
-        return null;
+    public Optional<Person> findId(int id) {
+        return data.findById(id);
     }
 
     @Override
