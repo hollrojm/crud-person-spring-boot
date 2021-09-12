@@ -37,7 +37,7 @@ public final class PersonService implements PersonServiceInterface{
 
     @Override
     public void delete(int id) {
-
+        data.deleteById(id);
     }
 
     @Override
