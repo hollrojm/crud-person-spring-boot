@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface PersonServiceInterface {
 
     public List<Person> getAll();
-    public Optional<Person> findId(int id);
+    public Optional<Person> findById(int id) throws NoSuchFieldException;
     public Person create(Person person);
     public void delete(int id);
     public Person update(Person person);
